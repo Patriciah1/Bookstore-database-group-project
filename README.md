@@ -11,14 +11,12 @@ The Group Members are:
 Customer & Address Management
 Main Responsibilities: Tables involving customer profiles and addresses
 
-Tables to Create:
-
-Table Name	                     Description
-customer	               Stores customer information
-customer_address	       Links customers to addresses (many-to-many)
-address_status	         Defines if the address is current, old, etc.
-address	                 Stores the actual address details
-country	                  List of countries for addresses
+Tables to Create:                     
+customer-Stores customer information
+customer_address-Links customers to addresses (many-to-many)
+address_status-Defines if the address is current, old, etc.
+address-Stores the actual address details
+country-List of countries for addresses
 
 Summary of Relationships:
 customer links to customer_address.
