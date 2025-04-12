@@ -12,15 +12,15 @@ Customer & Address Management
 Main Responsibilities: Tables involving customer profiles and addresses
 
 Tables to Create:                     
-customer-Stores customer information
-customer_address-Links customers to addresses (many-to-many)
-address_status-Defines if the address is current, old, etc.
-address-Stores the actual address details
-country-List of countries for addresses
+1. customer-Stores customer information
+2. customer_address-Links customers to addresses (many-to-many)
+3. address_status-Defines if the address is current, old, etc.
+4. address-Stores the actual address details
+5. country-List of countries for addresses
 
 Summary of Relationships:
-customer links to customer_address.
-customer_address links to address and address_status.
-address links to country.
+i) customer links to customer_address.
+ii) customer_address links to address and address_status.
+iii) address links to country.
 
 This structure ensures data normalization and allows flexibility (e.g., tracking address history).
