@@ -308,6 +308,26 @@ GRANT 'customer_role' to customer@localhost;
 SELECT user, host FROM mysql.user WHERE user IN ('admin', 'customer', 'staff');
 
 
+-- Book-author relationships
+INSERT INTO book_author (id, author_id, book_id) VALUES
+('ba_hp_rowling', 'auth_rowling', 'book_hp1'),
+('ba_sh_king', 'auth_king', 'book_shining'),
+('ba_hm_atwood', 'auth_atwood', 'book_handmaid');
+
+-- Customers with transaction protection
+INSERT INTO customer (id, name, email) VALUES
+('cust_john', 'John Smith', 'john.smith@example.com'),
+('cust_emma', 'Emma Johnson', 'emma.j@example.com');
+
+-- Addresses with country references
+INSERT INTO address (id, street, city, postal_code, country_id) VALUES
+('addr_john_home', '123 Main St', 'New York', '10001', 'ctry_us'),
+('addr_emma_work', '456 Oxford St', 'London', 'W1D 1BS', 'ctry_uk');
+
+-- Customer-address links
+INSERT INTO customer_address (id, customer_id, address_id, status_id) VALUES
+('ca_john_home', 'cust_john', 'addr_john_home', 'addrstat_home'),
+('ca_emma_work', 'cust_emma', 'addr_emma_work', 'addrstat_work');
 
 
 
