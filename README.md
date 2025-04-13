@@ -23,4 +23,7 @@ i) customer links to customer_address.
 ii) customer_address links to address and address_status.
 iii) address links to country.
 
+The ERD Diagram
+![ERD Diagram](ERD%20DIAGRAM.png)
+
 This structure ensures data normalization and allows flexibility (e.g., tracking address history).
