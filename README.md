@@ -12,6 +12,7 @@ Objective:
 To design and implement a MySQL database system for managing bookstore operations, including book listings, customers, orders, and logistics.
 
 Step-by-Step Implementation
+
 Database Creation
 
 A new MySQL database was created to serve as the central repository for all bookstore-related data.
@@ -19,36 +20,29 @@ A new MySQL database was created to serve as the central repository for all book
 Schema Design & Data Types
 
 The data model was carefully planned, identifying entities such as book, author, customer, order, and others.
-
 Appropriate data types (e.g., INT, VARCHAR, DATETIME) were selected to ensure data integrity, performance, and accuracy.
 
 Table Creation with SQL
 
 SQL CREATE TABLE statements were written for each table in the database.
-
 Relationships such as one-to-many (e.g., customer to orders) and many-to-many (e.g., books to authors) were implemented using foreign keys and junction tables (e.g., book_author).
 
 User Access Control
 
 User roles and permissions were configured using CREATE USER, GRANT, and REVOKE statements.
-
 This ensured secure access to the database, allowing role-based control (e.g., admins, sales, analysts).
 
 Database Testing
 
 Sample data was inserted into the tables.
-
 Queries were executed to test data retrieval, joining of tables, and validation of foreign key constraints.
 
 
 
 Expected Outcomes Achieved
 Real-World Experience: Gained hands-on experience designing and implementing a relational database using MySQL.
-
 Schema Optimization: Efficient table design with well-structured relationships and appropriate data types.
-
 Security & Access Control: Implemented basic access management to safeguard data.
-
 Data Exploration: Developed and executed queries to extract meaningful insights from the bookstore dataset.
 
 Table Names and Descriptions
@@ -77,4 +71,4 @@ The bookstore database project successfully demonstrates the key concepts of dat
 The ERD Diagram
 ![ERD Diagram](ERD%20DIAGRAM.png)
 
-This structure ensures data normalization and allows flexibility (e.g., tracking address history).
+
