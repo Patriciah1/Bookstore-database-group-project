@@ -38,15 +38,17 @@ CREATE TABLE book (
     publication_year YEAR,
     price DECIMAL(10, 2),
     language_id INT,
-    FOREIGN KEY (language_id) REFERENCES book_language(language_id)
+    publisher_id INT,
+    FOREIGN KEY (language_id) REFERENCES book_language(language_id),
+    FOREIGN KEY (publisher_id) REFERENCES publisher(publisher_id)
 );
 
 
 INSERT INTO book (title, publication_year, price, language_id) VALUES
 
-('Pride and Prejudice', 1913, 12.50, 1),
-('Adventures of Huckleberry Finn', 1984, 8.75, 2),
-('Harry Potter and the Sorcerer''s Stone', 1997, 15.00, 3);
+('Pride and Prejudice', 1913, 12.50, 1, 1),
+('Adventures of Huckleberry Finn', 1984, 8.75, 2, 2),
+('Harry Potter and the Sorcerer''s Stone', 1997, 15.00, 3, 3);
 
 SELECT * FROM book;
 
